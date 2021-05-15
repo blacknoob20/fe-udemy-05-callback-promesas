@@ -16,5 +16,9 @@ const heroes = {
 export const buscarHeroe = (id, callback) => {
     const heroe = heroes[id];
 
-    callback();
+    if(heroe){
+        callback(null, heroe);
+    } else{
+        callback(`No existe el heroe con el id ${id}`);
+    }
 }
