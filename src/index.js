@@ -27,6 +27,8 @@ const heroeId2 = 'cap';
 Promise.all([buscarHeroe(heroeId1), buscarHeroe(heroeId2)])
        .then( ([heroe1, heroe2]) => {
             console.log(`Enviando a ${heroe1.nombre} y ${heroe2.nombre} a la mision.`);
+}).catch(err => {
+    alert(err);
 });
 
 console.log('Fin del programa');
