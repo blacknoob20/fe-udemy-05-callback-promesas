@@ -13,7 +13,7 @@ const heroes = {
     }
 };
 
-const buscarHeroe = (id) => {
+export const buscarHeroe = (id) => {
     const heroe = heroes[id];
 
     return new Promise((resolve, reject) => {
@@ -25,7 +25,7 @@ const buscarHeroe = (id) => {
     });
 };
 
-const buscarHeroeAsync = async(id) => {
+export const buscarHeroeAsync = async(id) => {
     const heroe = heroes[id];
 
     if(heroe){

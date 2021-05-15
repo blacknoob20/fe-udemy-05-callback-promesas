@@ -1,9 +1,10 @@
-import { promesaLenta,promesaMedia,promesaRapida } from "./js/promesas";
+import { buscarHeroe, buscarHeroeAsync } from "./js/promesas";
 
-// promesaLenta(console.log);
-// promesaMedia(console.log);
-// promesaRapida(console.log);
+buscarHeroe('capi')
+    .then(heroe => console.log)
+    .catch(console.warm);
 
-Promise.race([promesaLenta,promesaMedia,promesaRapida])
-       .then(console.log)
-       .catch(console.warn);
+buscarHeroeAsync('iron')
+    .then(heroe => console.log)
+    .catch(console.warm);
+    ;
