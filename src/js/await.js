@@ -16,3 +16,11 @@ export const obtenerHeroes = async() => {
     // return await Promise.all(aHeroes);
 };
 
+export const obtenerHeroesAwait = async(id) => {
+    try {
+        return await buscarHeroeAsync(id);
+    } catch (error) {
+        console.log('Catch...!');
+        console.log(error);
+    }
+};
