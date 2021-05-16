@@ -1,3 +1,8 @@
 import { obtenerHeroes } from "./js/await";
 
-obtenerHeroes().then(console.table);
+console.time('await');
+
+obtenerHeroes().then(heroes => {
+    console.table(heroes);
+    console.timeEnd('await');
+});
