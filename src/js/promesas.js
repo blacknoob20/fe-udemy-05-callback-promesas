@@ -35,26 +35,26 @@ export const buscarHeroeAsync = async(id) => {
     }
 }
 
-const promesaLenta = new Promise((resolve, reject) => {
-    setTimeout(() => {
-        console.log('promesa Lenta.');
-    }, 2000);    
-});
+// const promesaLenta = new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//         console.log('promesa Lenta.');
+//     }, 2000);    
+// });
 
-const promesaMedia = new Promise((resolve, reject) => {
-    setTimeout(() => {
-        console.log('promesa Media.');
-    }, 1500);
-});
+// const promesaMedia = new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//         console.log('promesa Media.');
+//     }, 1500);
+// });
 
-const promesaRapida = new Promise((resolve, reject) => {
-    setTimeout(() => {
-        console.log('promesa Rapida.');
-    }, 1000);
-});
+// const promesaRapida = new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//         console.log('promesa Rapida.');
+//     }, 1000);
+// });
 
-export{
-    promesaLenta,
-    promesaMedia,
-    promesaRapida
-};
+// export{
+//     promesaLenta,
+//     promesaMedia,
+//     promesaRapida
+// };
